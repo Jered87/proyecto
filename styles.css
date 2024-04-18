@@ -12,7 +12,7 @@ header {
 .header-content {
     position: absolute;
     top: 35%;
-    left: 40%;
+    left: 35%;
     text-align: center;
     color: black;
 
@@ -28,6 +28,19 @@ header {
     color: black;
     text-decoration: overline;
 }
+
+#button-user, #button-cart {
+background-color: brown;
+color: white;
+padding: 8px 10px;
+text-align: center;
+text-decoration: none;
+font-size: 10px;
+cursor: pointer;
+position: relative;
+margin-right: 5px;
+}
+
 
 /* nav-bar */
 .menu {
