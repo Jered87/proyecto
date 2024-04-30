@@ -35,6 +35,7 @@
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
     color: #222;
+    text-shadow:2px 2px 3px rgb(240, 235, 235); ;
   }
   
 .header-content h2 {

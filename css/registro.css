@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+   background-color: rgb(226, 222, 217);
+
+}
+
+.contenedor{
+    background-color: #6482c4;
+    max-width: 500px;
+    height: auto;
+    margin: auto;
+    background-image: url(../img/bunker.jpg);
+    background-position: center;
+    background-size: cover; 
+    object-fit: contain;
+    margin-top: 30px;
+    
+}
+
+
+#formulario {
+    padding: 30px 10px;
+} 
+
+.form-control {    
+     margin-bottom: 18px;
+     padding-bottom: 25px;
+     position: relative;
+    /* background-color:  rgba(94, 50, 107, 0.041); */
+}
+
+.form-control label {
+    font-family: "Pixelify Sans", sans-serif;
+    display: inline-block;
+    font-size: 34px;
+    color: rgb(217, 228, 118);
+    text-shadow: 2px 2px 3px black;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.form-control input {
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 8px 0; 
+    width: 80%;
+    border-radius: 10px;
+    margin: auto;    
+}
+.form-control, input:focus {
+    outline: none;
+}
+input::placeholder{
+    padding-left: 5px;
+    color: #999290;
+    font-family:"Pixelify Sans", sans-serif ;
+}
+.form-control.ok input {
+    border: 0.5px solid;
+    border-color: #47cf4e;
+}
+.form-control.falla input {
+    border: 0.5px solid;
+    border-color: #e46b46;
+}
+
+#formulario button {
+    background: #646160;
+    border:1px solid #3d3936;
+    border-radius: 10px;
+    color:rgb(217, 228, 118);
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    font-family: "Pixelify Sans", sans-serif;
+    text-shadow: 1px 1px 3px black;
+}
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.form-control.falla p {
+    visibility: visible;
+    color:white;
+    background-color: rgb(173, 7, 7);
+}
