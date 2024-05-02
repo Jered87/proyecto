@@ -37,6 +37,7 @@ window.addEventListener('load', () => {
         }
         //validando campo password      
         if (passValor === "") {
+                    //input----------mje
             validaFalla(pass, 'Por favor, complete este campo.')
         } else if (passValor.length < 8) {
             validaFalla(pass, 'Debe tener 8 caracteres cómo mínimo.')
