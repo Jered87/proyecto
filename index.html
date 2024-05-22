@@ -2,126 +2,120 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pixeldrink</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>pixeldrink</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/login.css">
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
-    <header class="header-container">
-        <div class="login">
-          <li><button id="button-user"><a href=""></a>Login</button></li>
-          <li><a href="./pages/registro.html"><button id="button-registro">Registrarse</button></a></li>
-          <li><button id="button-cart"><i class="fa-regular fa-cart-shopping"></i></button></li>
-        </div>
-        <div class="header-content"> 
-          <h1 class="title">PIXEL BAR</h1>
-          <h2>Tragos un px a la vez</h2>
-        </div>
-      </header>
-      <nav class="menu">
-        <ul>
-          <li><a href="./pages/gin.html">Gin</a></li>
-          <li><a href="./pages/vodka.html">Vodka</a></li>
-          <li><a href="./pages/whisky.html">Whisky</a></li>
-          <li><a href="./pages/ron.html">Ron</a></li>
-          <li><a href="./pages/tequila.html">Tequila</a></li>
-          <li><a href="./pages/vermouth.html">Vermouth</a></li>
-    
-        </ul>
-      </nav>
-          <!-- formulario de Login tipo modal -->
-    <section class="modal">
-      <div class="modal__container">
-        <div class="form-container">
-          <h2>Iniciar Sesion</h2>
-          <form action="#">
-            <div class="form-control">
-              <input type="email" id="emailInput" required />
-              <label>Email</label>
-            </div>
-            <div class="form-control">
-              <input type="password" id="passwordInput" required />
-              <label>Contraseña</label>
-            </div>
-            <button type="submit" class="logIn">Iniciar</button>
-            <div class="form-help">
-              <div class="remember-me">
-                <input type="checkbox" id="remember-me" />
-                <label for="remember-me">Recuerdame</label>
-              </div>
-              <a href="#">Ayuda?</a>
-            </div>
-          </form>
-          <div class="icons-container">
-            <i class="fa-brands fa-google"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-regular fa-envelope"></i>
+  <header class="header-container">
+    <div class="login">
+      <li><button id="button-user"><a href=""></a>Login</button></li>
+      <li><a href="./pages/registro.html"><button id="button-registro">Registrarse</button></a></li>
+      <li><a href="./carrito.html"><button id="button-cart"><i class="fa-solid fa-cart-shopping"></i></button></a></li>
+    </div>
+    <div class="header-content">
+      <h1 class="title">PIXEL BAR</h1>
+      <h2>Tragos un px a la vez</h2>
+    </div>
+  </header>
+  <nav class="menu">
+    <ul>
+      <li><a href="./pages/gin.html">Gin</a></li>
+      <li><a href="./pages/vodka.html">Vodka</a></li>
+      <li><a href="./pages/whisky.html">Whisky</a></li>
+      <li><a href="./pages/ron.html">Ron</a></li>
+      <li><a href="./pages/tequila.html">Tequila</a></li>
+      <li><a href="./pages/vermouth.html">Vermouth</a></li>
+
+    </ul>
+  </nav>
+  <!-- formulario de Login tipo modal -->
+  <section class="modal">
+    <div class="modal__container">
+      <div class="form-container">
+        <h2>Iniciar Sesion</h2>
+        <form action="#">
+          <div class="form-control">
+            <input type="email" id="emailInput" required />
+            <label>Email</label>
           </div>
+          <div class="form-control">
+            <input type="password" id="passwordInput" required />
+            <label>Contraseña</label>
+          </div>
+          <button type="submit" class="logIn">Iniciar</button>
+          <div class="form-help">
+            <div class="remember-me">
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me">Recuerdame</label>
+            </div>
+            <a href="#">Ayuda?</a>
+          </div>
+        </form>
+        <div class="icons-container">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-regular fa-envelope"></i>
         </div>
       </div>
-    </section>
-    <!--  -->
-    <section class="container">
-        <div id="item-1">
-            <a href="gin.html">
-                <img src="img/bombay-750-.png" alt="">
-                <div class="description1">
-                    Elaborado según una receta secreta que data de 1761, bombay sapphire se produce logrando una
-                    combinación única de diez ingredientes botánicos naturales seleccionados y un proceso exclusivo de
-                    destilación. El resultado es un complejo líquido aromático, con sabor refinado y un delicado
-                    equilibrio.
-                </div>
-            </a>
+    </div>
+  </section>
+  <!--  -->
+  <section class="container">
+    <div id="item-1">
+      <a href="gin.html">
+        <img src="img/bombay-750-.png" alt="">
+        <div class="description1">
+          Elaborado según una receta secreta que data de 1761, bombay sapphire se produce logrando una
+          combinación única de diez ingredientes botánicos naturales seleccionados y un proceso exclusivo de
+          destilación. El resultado es un complejo líquido aromático, con sabor refinado y un delicado
+          equilibrio.
         </div>
-        <div id="item-2">
-            <a href="gin.html">
-                <img src="img/beefeater.jpg" alt="">
-                <div class="description2">
-                    Esta ginebra, una London Dry Gin por antonomasia hecha con un intenso toque de enebro y fuertes
-                    notas cítricas, es una auténtica London Dry para quienes disfrutan del sabor auténtico de la
-                    ginebra.
-                    Con una tradición en el mundo de la destilación de 200 años, había una época en la que pesábamos a
-                    mano los extractos naturales de cada lote de ginebra que producíamos… Era hace dos días.
-                </div>
-            </a>
+      </a>
+    </div>
+    <div id="item-2">
+      <a href="gin.html">
+        <img src="img/beefeater.jpg" alt="">
+        <div class="description2">
+          Esta ginebra, una London Dry Gin por antonomasia hecha con un intenso toque de enebro y fuertes
+          notas cítricas, es una auténtica London Dry para quienes disfrutan del sabor auténtico de la
+          ginebra.
+          Con una tradición en el mundo de la destilación de 200 años, había una época en la que pesábamos a
+          mano los extractos naturales de cada lote de ginebra que producíamos… Era hace dos días.
         </div>
-        <div id="item-3">
+      </a>
+    </div>
+    <div id="item-3">
 
-        </div>
-    </section>
+    </div>
+  </section>
 
-    <footer>
-      <h3 class="textoFooter">Seguinos en nuestras redes sociales</h3>
-      <div class="social-media">
-          <a href="https://www.facebook.com" target="_blank">
-              <img src="img/facebook.ico" alt="Facebook">
-          </a>
-          <a href="https://www.instagram.com" target="_blank">
-              <img src="img/instagram.ico" alt="Instagram">
-          </a>
-          <a href="https://wa.me/tu-numero" target="_blank">
-              <img src="img/Whatsapp.ico" alt="WhatsApp">
-          </a>
-      </div>
-      <p>&copy; 2024 Pixel Bar. Todos los derechos reservados.</p>
-    </footer>
+  <footer>
+    <h3 class="textoFooter">Seguinos en nuestras redes sociales</h3>
+    <div class="social-media">
+      <a href="https://www.facebook.com" target="_blank">
+        <img src="img/facebook.ico" alt="Facebook">
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img src="img/instagram.ico" alt="Instagram">
+      </a>
+      <a href="https://wa.me/tu-numero" target="_blank">
+        <img src="img/Whatsapp.ico" alt="WhatsApp">
+      </a>
+    </div>
+    <p>&copy; 2024 Pixel Bar. Todos los derechos reservados.</p>
+  </footer>
 
-
-
-    <script src="./js/login.js"></script>
+  <script src="./js/login.js"></script>
 </body>
 
 </html>
