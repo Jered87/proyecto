@@ -10,6 +10,13 @@
 </head>
 
 <body>
+    <header class="header-container">
+        <li><button class="btnVolver"><a class="volver" href="../index.html">Volver</a></button></li>
+        </div>
+        <div class="header-content"> 
+          <h1 class="title">Registro</h1>
+        </div>
+      </header>
     <div class="contenedor">
         <form id="formulario" action="" method="">
             <div class="form-control ">
@@ -31,7 +38,37 @@
                 <input type="checkbox" class="cuadrito">
                 <label for="">Desea recibir promociones?</label>
             </div>
-            <button type="submit">Enviar</button>
+            <div class="check">
+                <label for="zonas">Selecciona su zona de Argentina:</label>
+                <select id="zonas" name="zonas" class="seleccion">
+                    <option value="seleccione">Seleccione</option>
+                    <option value="buenos_aires">Buenos Aires</option>
+                    <option value="catamarca">Catamarca</option>
+                    <option value="chaco">Chaco</option>
+                    <option value="chubut">Chubut</option>
+                    <option value="caba">Ciudad Autónoma de Bs As</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
+                    <option value="entre_rios">Entre Ríos</option>
+                    <option value="formosa">Formosa</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="la_pampa">La Pampa</option>
+                    <option value="la_rioja">La Rioja</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="misiones">Misiones</option>
+                    <option value="neuquen">Neuquén</option>
+                    <option value="rio_negro">Río Negro</option>
+                    <option value="salta">Salta</option>
+                    <option value="san_juan">San Juan</option>
+                    <option value="san_luis">San Luis</option>
+                    <option value="santa_cruz">Santa Cruz</option>
+                    <option value="santa_fe">Santa Fe</option>
+                    <option value="santiago_del_estero">Santiago del Estero</option>
+                    <option value="tierra_del_fuego">Tierra del Fuego</option>
+                    <option value="tucuman">Tucumán</option>
+                </select>
+            </div>
+            <button class="btnEnviar" type="submit">Enviar</button>
             <div id="modalEmail">
             </div>
         </form>

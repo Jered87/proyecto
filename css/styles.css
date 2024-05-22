@@ -19,7 +19,6 @@
   }
   
 
-  
   .header-content {
     display: flex;
     align-items: center;
@@ -34,7 +33,7 @@
     font-size: 90px;
     font-family: "Pixelify Sans", sans-serif;
     text-align: center;
-    color: #222;
+    color: #080808;
     text-shadow:2px 2px 3px rgb(240, 235, 235); ;
   }
   
@@ -78,6 +77,12 @@
     transition: .3s;
 }
 
+#button-registro:hover{
+    background-color: #2a3430;
+    color:  white;
+    font-weight: bolder;
+    transition: .3s;
+}
 
 /* nav-bar */
   
