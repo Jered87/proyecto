@@ -374,3 +374,24 @@ a:hover {
     font-weight: 800;
     text-decoration: none;
 }
+
+/* ---------------------------Producto Secciones--------------------------------------------- */
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    flex: 0 0 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+    margin-bottom: 20px; 
+    
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
