@@ -18,6 +18,7 @@ body{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    border-bottom: 3px solid white;
   }
   .title{
     font-size: 90px;
@@ -168,3 +169,44 @@ input::placeholder{
     color: #383636;
     font-family:"Pixelify Sans", sans-serif ;
 }
+/* -----------------------estilos footer------------------------------------------ */
+
+footer {
+    margin-top: 30px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    border-top: 3px solid white;
+}
+.textoFooter{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    text-shadow:1px 1px 2px rgb(10, 10, 10);
+}
+footer p {
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.social-media {
+    margin-top: 30px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s;
+    padding: 10px;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
+
