@@ -315,11 +315,23 @@ footer p {
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1; 
+
+    background-size: cover;
+    background-position: center;
+    animation: rotateImages 30s linear infinite;
+}
+
+@keyframes rotateImages {
+    0% { background-image: url('../img/back-1.png'); }
+    33.33% { background-image: url('../img/back-2.png'); }
+    66.66% { background-image: url('../img/back-3.png'); }
+    100% { background-image: url('../img/back-1.png'); }
 }
 
 .card-title {
     font-size: 24px;
     margin: 10px 0;
+    text-shadow: 1px 1px 2px rgba(255, 254, 254, 0.507);
 }
 
 .card-description {
@@ -327,6 +339,8 @@ footer p {
     font-size: 16px;
     margin-bottom: 16px;
     flex-grow: 1; 
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .card-button {
