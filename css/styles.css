@@ -406,3 +406,141 @@ a:hover {
     padding: 10px;
     text-align: center;
 }
+
+@media (max-width: 600px) {
+    .header-container {
+      height: 40vh;
+    }
+  
+    .header-content {
+      top: -30%;
+    }
+  
+    .title {
+      font-size: 50px;
+    }
+  
+    .login {
+      flex-direction: column;
+      margin-right: 0;
+      margin-top: 16px;
+      gap: 5px;
+      text-align: center;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu li {
+      padding: 10px;
+    }
+  
+    .container {
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+    }
+  
+    #item-1, #item-2, #item-3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      height: auto;
+    }
+
+    .textoFooter{
+        font-size: 20px;
+    }
+
+    .social-media img {
+        width: 60px;
+        height: 60px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .header-container {
+      height: 50vh;
+    }
+  
+    .header-content {
+      top: -40%;
+    }
+  
+    .title {
+      font-size: 70px;
+    }
+  
+    .login {
+      margin-right: 1em;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu li {
+      padding: 10px 15px;
+    }
+  
+    .container {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    #item-1, #item-2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  
+    #item-3 {
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .header-container {
+      height: 60vh;
+    }
+  
+    .header-content {
+      top: -60%;
+    }
+  
+    .title {
+      font-size: 90px;
+    }
+  
+    .login {
+      margin-right: 2em;
+    }
+  
+    .menu ul {
+      flex-direction: row;
+    }
+  
+    .menu li {
+      padding: 10px 20px;
+    }
+  
+    .container {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    #item-1, #item-2 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  
+    #item-3 {
+      grid-row-start: 1;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+    }
+  }
