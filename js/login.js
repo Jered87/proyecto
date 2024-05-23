@@ -7,6 +7,7 @@ const passwordInput = document.querySelector("#passwordInput");
 const googleI = document.querySelector(".fa-google");
 const facebookI = document.querySelector(".fa-facebook-f");
 const emailI = document.querySelector(".fa-envelope");
+const volver = document.querySelector(".fa-arrow-left")
 //------------------------------------------------
 
 /// evento click y la funcionalidad de que agregue la clase modal--show y elimiar el scroll
@@ -43,3 +44,7 @@ googleI.addEventListener("click", () => {
 emailI.addEventListener("click", () => {
   window.location.href = `https://login.live.com`;
 });
+
+volver.addEventListener('click', () => {
+  window.location.href = `index.html`
+})
