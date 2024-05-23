@@ -119,7 +119,10 @@
     font-weight: bolder;
     text-decoration: none;
 }
-
+.active{
+  background-color: chartreuse;
+  color: aqua;
+}
 /* --------------------------------Medias Queries-------------------------------- */
 
 
