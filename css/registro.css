@@ -234,3 +234,32 @@ footer p {
     transform: scale(1.2);
 }
 
+@media (max-width: 600px) {
+    .title{
+        font-size: 60px;
+    }
+    .form-control label{
+        font-size: 26px;
+    }
+    .form-control input{
+        font-size: 14px;
+    }
+    .btnEnviar{
+        font-size: 20px;
+    }
+    .form-control p{
+        font-size: 16px;
+    }
+    .check{
+        font-size: 20px;
+    }
+
+    .textoFooter{
+        font-size: 18px;
+    }
+    .social-media img{
+        width: 60px;
+        height: 60px;
+        padding: 8px
+    }
+}

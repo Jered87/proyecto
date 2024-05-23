@@ -60,7 +60,8 @@
 
 #button-user,
 #button-cart,
-#button-registro {
+#button-registro,
+.btnVolver {
     background-color: rgba(165, 42, 42, 0.877);
     color: white;
     padding: 8px 10px;
@@ -73,7 +74,7 @@
     border-radius: 8px;
 }
 
-#button-user:hover, #button-registro:hover, #button-cart:hover{
+#button-user:hover, #button-registro:hover, #button-cart:hover, .btnVolver:hover{
     background-color: #2a3430;
     color: white;
     font-weight: bolder;
@@ -302,7 +303,7 @@ footer p {
 
 .card-img {
     width: 100%;
-    height: 300px;
+    height: 250px;
    object-fit: contain;
 }
 
@@ -318,6 +319,7 @@ footer p {
     animation: rotateImages 30s linear infinite;
 }
 
+/* -----------hasta aca lo nuevo--------------- */
 @keyframes rotateImages {
     0% { background-image: url('../img/back-1.png'); }
     33.33% { background-image: url('../img/back-2.png'); }
@@ -327,23 +329,24 @@ footer p {
 
 .card-title {
     font-size: 24px;
-    margin: 10px 0;
+    margin: 8px 0;
     text-shadow: 1px 1px 2px rgba(255, 254, 254, 0.507);
 }
 
 .card-description {
-    color: #555;
-    font-size: 16px;
+    color: #131312;
+    font-weight: 600;
+    font-size: 18px;
     margin-bottom: 16px;
     flex-grow: 1; 
     text-align: justify;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 7px rgba(201, 201, 197, 0.973);
 }
 
 .card-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: rgb(72, 152, 236);
+    background-color: rgb(22, 26, 31);
     color: rgb(230, 225, 225);
     text-decoration: none;
     border-radius: 5px;
@@ -359,31 +362,6 @@ footer p {
 /* ---------------------Seccion Gin------------------------------ */
 li {
     list-style: none;
-}
-
-.btnVolver {
-    /* margin-top: 20px; */
-    margin-left: 10px;
-    background-color: rgb(211, 200, 49);
-    border-radius: 10px;
-    padding: 3px;
-    box-shadow: 2px 2px 5px 5px rgb(255, 255, 255);
-}
-
-.btnVolver:hover,
-a:hover {
-    background-color: #646161;
-    transition: 0.5s;
-    color: white;
-
-}
-
-.volver {
-    font-size: 30px;
-    font-family: "Pixelify Sans", sans-serif;
-    color: #080808;
-    font-weight: 800;
-    text-decoration: none;
 }
 
 /* ---------------------------Producto Secciones--------------------------------------------- */
@@ -406,6 +384,8 @@ a:hover {
     padding: 10px;
     text-align: center;
 }
+
+/* -------------------------media query------------------------------- */
 
 @media (max-width: 600px) {
     .header-container {
