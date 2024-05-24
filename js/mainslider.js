@@ -3,10 +3,10 @@ const sliderContent = document.querySelector('.slider-content');
 function populateGinSlider() {
   sliderContent.innerHTML = '';
   productosGin.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('card');
+    const cardIndex = document.createElement('div');
+    cardIndex.classList.add('cardIndex');
 
-    card.innerHTML = `
+    cardIndex.innerHTML = `
       <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
       <div class="card-content">
         <h2 class="card-title">${product.titulo}</h2>
@@ -15,7 +15,7 @@ function populateGinSlider() {
         <h3>$${product.precio}</h3>
       </div>
     `;
-    sliderContent.appendChild(card);
+    sliderContent.appendChild(cardIndex);
   });
 }
 
@@ -25,10 +25,10 @@ populateGinSlider();
 function populateRonSlider() {
   sliderContent.innerHTML = '';
   productosRon.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('card');
+    const cardIndex = document.createElement('div');
+    cardIndex.classList.add('cardIndex');
 
-    card.innerHTML = `
+    cardIndex.innerHTML = `
       <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
       <div class="card-content">
         <h2 class="card-title">${product.titulo}</h2>
@@ -37,7 +37,7 @@ function populateRonSlider() {
         <h3>$${product.precio}</h3>
       </div>
     `;
-    sliderContent.appendChild(card);
+    sliderContent.append(cardIndex);
   });
 }
 
@@ -47,10 +47,10 @@ populateRonSlider();
 function populateTequilaSlider() {
   sliderContent.innerHTML = '';
   productosTequila.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('card');
+    const cardIndex = document.createElement('div');
+    cardIndex.classList.add('cardIndex');
 
-    card.innerHTML = `
+    cardIndex.innerHTML = `
       <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
       <div class="card-content">
         <h2 class="card-title">${product.titulo}</h2>
@@ -59,7 +59,7 @@ function populateTequilaSlider() {
         <h3>$${product.precio}</h3>
       </div>
     `;
-    sliderContent.appendChild(card);
+    sliderContent.append(cardIndex);
   });
 }
 
@@ -69,10 +69,10 @@ populateTequilaSlider();
 function populateVermouthSlider() {
   sliderContent.innerHTML = '';
   productosVermouth.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('card');
+    const cardIndex = document.createElement('div');
+    cardIndex.classList.add('cardIndex');
 
-    card.innerHTML = `
+    cardIndex.innerHTML = `
       <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
       <div class="card-content">
         <h2 class="card-title">${product.titulo}</h2>
@@ -81,7 +81,7 @@ function populateVermouthSlider() {
         <h3>$${product.precio}</h3>
       </div>
     `;
-    sliderContent.appendChild(card);
+    sliderContent.append(cardIndex);
   });
 }
 
@@ -91,10 +91,10 @@ populateVermouthSlider();
 function populateVodkaSlider() {
   sliderContent.innerHTML = '';
   productosVodka.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('card');
+    const cardIndex = document.createElement('div');
+    cardIndex.classList.add('cardIndex');
 
-    card.innerHTML = `
+    cardIndex.innerHTML = `
       <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
       <div class="card-content">
         <h2 class="card-title">${product.titulo}</h2>
@@ -103,7 +103,7 @@ function populateVodkaSlider() {
         <h3>$${product.precio}</h3>
       </div>
     `;
-    sliderContent.appendChild(card);
+    sliderContent.append(cardIndex);
   });
 }
 
@@ -113,10 +113,10 @@ populateVodkaSlider();
 function populateWhiskySlider() {
   sliderContent.innerHTML = '';
   productosWhisky.forEach(product => {
-    const card = document.createElement('div');
-    card.classList.add('card');
+    const cardIndex = document.createElement('div');
+    cardIndex.classList.add('cardIndex');
 
-    card.innerHTML = `
+    cardIndex.innerHTML = `
       <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
       <div class="card-content">
         <h2 class="card-title">${product.titulo}</h2>
@@ -125,7 +125,7 @@ function populateWhiskySlider() {
         <h3>$${product.precio}</h3>
       </div>
     `;
-    sliderContent.appendChild(card);
+    sliderContent.append(cardIndex);
   });
 }
 
