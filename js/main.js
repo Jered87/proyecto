@@ -2,9 +2,10 @@ const sectionTarjetas = document.querySelector('.tarjetas');
 
 // Función para manejar el evento de clic en los botones "Comprar"
 function botonesClick(event) {
-    const productoId = event.target.id;
-    // Aquí puedes agregar la lógica para manejar la compra del producto
-    console.log(`Producto con ID ${productoId} agregado al carrito`);
+    if (event.target.classList.contains('card-button')) {
+        const productoId = event.target.id;
+        console.log(`Producto con ID ${productoId} agregado al carrito`);
+    }
 }
 
 // Función para cargar los productos
@@ -24,12 +25,9 @@ function cargarProductos(arrayproductos){
         </div>
         `
         sectionTarjetas.append(div)//agrega el elemento al html
+        sectionTarjetas.addEventListener('click', botonesClick);
     });
 
-    // Añadir eventos de clic a los botones "Comprar"
-    const botonesComprar = document.querySelectorAll('.card-button');
-    botonesComprar.forEach(boton => {
-        boton.addEventListener('click', botonesClick);
-    });
+   
 }
 

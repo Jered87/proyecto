@@ -1,8 +1,12 @@
 const sliderContent = document.querySelector('.slider-content');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
 
-function populateGinSlider() {
+let indexActual = 0;
+
+function populateSlider(arraySlide) {
   sliderContent.innerHTML = '';
-  productosGin.forEach(product => {
+  arraySlide.forEach(product => {
     const cardIndex = document.createElement('div');
     cardIndex.classList.add('cardIndex');
 
@@ -11,122 +15,48 @@ function populateGinSlider() {
       <div class="card-content">
         <h2 class="card-title">${product.titulo}</h2>
         <p class="card-description">${product.descripcion}</p>
-        <a href="#" class="card-button">Comprar</a>
-        <h3>$${product.precio}</h3>
-      </div>
-    `;
-    sliderContent.appendChild(cardIndex);
-  });
-}
-
-populateGinSlider();
-
-
-function populateRonSlider() {
-  sliderContent.innerHTML = '';
-  productosRon.forEach(product => {
-    const cardIndex = document.createElement('div');
-    cardIndex.classList.add('cardIndex');
-
-    cardIndex.innerHTML = `
-      <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
-      <div class="card-content">
-        <h2 class="card-title">${product.titulo}</h2>
-        <p class="card-description">${product.descripcion}</p>
-        <a href="#" class="card-button">Comprar</a>
-        <h3>$${product.precio}</h3>
+        <button class="card-button">Comprar</button>
+        <h3 class= "precioProductos">$${product.precio}</h3>
       </div>
     `;
     sliderContent.append(cardIndex);
+    /*sliderContent.addEventListener('click', botonesClick)*/
   });
 }
 
-populateRonSlider();
+function mostrarSlide(index) {
+  const slides = document.querySelectorAll('.cardIndex');
+  if(index >= slides.length) {
+    indexActual = 0; // vuelve al comienzo
+  }
+  // si es menor q cero es q retrocedimos y queremos ir al ultimo slide
+  if (index < 0){
+    indexActual = slides.length -1; 
+  }
+  //desplaza a la izq un multiplo del 100% del contenedor por cada indice
+  sliderContent.style.transform = `translateX(-${indexActual * 100}%)`;
+} 
 
 
-function populateTequilaSlider() {
-  sliderContent.innerHTML = '';
-  productosTequila.forEach(product => {
-    const cardIndex = document.createElement('div');
-    cardIndex.classList.add('cardIndex');
+prevBtn.addEventListener('click', () => {
+  indexActual--;
+  mostrarSlide(indexActual);
+});
 
-    cardIndex.innerHTML = `
-      <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
-      <div class="card-content">
-        <h2 class="card-title">${product.titulo}</h2>
-        <p class="card-description">${product.descripcion}</p>
-        <a href="#" class="card-button">Comprar</a>
-        <h3>$${product.precio}</h3>
-      </div>
-    `;
-    sliderContent.append(cardIndex);
-  });
-}
+nextBtn.addEventListener('click', () => {
+  indexActual++;
+  mostrarSlide(indexActual);
+});
 
-populateTequilaSlider();
-
-
-function populateVermouthSlider() {
-  sliderContent.innerHTML = '';
-  productosVermouth.forEach(product => {
-    const cardIndex = document.createElement('div');
-    cardIndex.classList.add('cardIndex');
-
-    cardIndex.innerHTML = `
-      <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
-      <div class="card-content">
-        <h2 class="card-title">${product.titulo}</h2>
-        <p class="card-description">${product.descripcion}</p>
-        <a href="#" class="card-button">Comprar</a>
-        <h3>$${product.precio}</h3>
-      </div>
-    `;
-    sliderContent.append(cardIndex);
-  });
-}
-
-populateVermouthSlider();
+// const productos = [
+//   { id: 1, titulo: 'Producto 1', descripcion: 'Descripción 1', precio: 100, imagen: './img/absolut.png' },
+//   { id: 2, titulo: 'Producto 2', descripcion: 'Descripción 2', precio: 200, imagen: './img/chivaslitro.png' },
+//   { id: 3, titulo: 'Producto 3', descripcion: 'Descripción 3', precio: 300, imagen: './img/diplomatico.png' },
+//   { id: 4, titulo: 'Producto 4', descripcion: 'Descripción 4', precio: 400, imagen: './img/orodeoaxaca.png' },
+//   { id: 5, titulo: 'Producto 5', descripcion: 'Descripción 5', precio: 500, imagen: './img/principe.png' }
+// ];
+populateSlider(productosGin);
+mostrarSlide(indexActual);
 
 
-function populateVodkaSlider() {
-  sliderContent.innerHTML = '';
-  productosVodka.forEach(product => {
-    const cardIndex = document.createElement('div');
-    cardIndex.classList.add('cardIndex');
 
-    cardIndex.innerHTML = `
-      <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
-      <div class="card-content">
-        <h2 class="card-title">${product.titulo}</h2>
-        <p class="card-description">${product.descripcion}</p>
-        <a href="#" class="card-button">Comprar</a>
-        <h3>$${product.precio}</h3>
-      </div>
-    `;
-    sliderContent.append(cardIndex);
-  });
-}
-
-populateVodkaSlider();
-
-
-function populateWhiskySlider() {
-  sliderContent.innerHTML = '';
-  productosWhisky.forEach(product => {
-    const cardIndex = document.createElement('div');
-    cardIndex.classList.add('cardIndex');
-
-    cardIndex.innerHTML = `
-      <img src="${product.imagen}" alt="${product.titulo}" class="card-img">
-      <div class="card-content">
-        <h2 class="card-title">${product.titulo}</h2>
-        <p class="card-description">${product.descripcion}</p>
-        <a href="#" class="card-button">Comprar</a>
-        <h3>$${product.precio}</h3>
-      </div>
-    `;
-    sliderContent.append(cardIndex);
-  });
-}
-
-populateWhiskySlider();
