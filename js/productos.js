@@ -416,3 +416,7 @@ const productosWhisky = [
         precio: 27800
     }
 ];
+
+const arrayDeArrays = [...productosGin, ...productosRon, ...productosTequila, ...productosVermouth, ...productosVodka, ...productosWhisky]
+
+

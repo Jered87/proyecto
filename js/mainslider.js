@@ -48,6 +48,15 @@ nextBtn.addEventListener('click', () => {
   mostrarSlide(indexActual);
 });
 
+
+function getRandomElements(array, count) {
+    const shuffledArray = array.sort(() => Math.random() - 0.5);
+    return shuffledArray.slice(0, count);
+}
+
+const randomElements = getRandomElements(arrayDeArrays, 10);
+
+
 // const productos = [
 //   { id: 1, titulo: 'Producto 1', descripcion: 'Descripción 1', precio: 100, imagen: './img/absolut.png' },
 //   { id: 2, titulo: 'Producto 2', descripcion: 'Descripción 2', precio: 200, imagen: './img/chivaslitro.png' },
@@ -55,7 +64,7 @@ nextBtn.addEventListener('click', () => {
 //   { id: 4, titulo: 'Producto 4', descripcion: 'Descripción 4', precio: 400, imagen: './img/orodeoaxaca.png' },
 //   { id: 5, titulo: 'Producto 5', descripcion: 'Descripción 5', precio: 500, imagen: './img/principe.png' }
 // ];
-populateSlider(productosGin);
+populateSlider(randomElements);
 mostrarSlide(indexActual);
 
 
