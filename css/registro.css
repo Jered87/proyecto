@@ -199,41 +199,47 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    height: 200px;
-    border-top: 3px solid white;
-}
-
-.textoFooter {
+  }
+  
+  .textoFooter {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 28px;
     text-shadow: 1px 1px 2px rgb(10, 10, 10);
-}
-
-footer p {
+  }
+  
+  footer p {
     margin-top: 10px;
     font-size: 20px;
-}
-
-.social-media {
+  }
+  
+  .social-media {
     margin-top: 30px;
-}
-
-.social-media a {
-    margin: 0 10px;
+  }
+  
+  .social-media a {
+    margin: 0 15px; /* Aumenté el espacio entre los íconos */
     display: inline-block;
-}
-
-.social-media img {
-    width: 70px;
-    height: 70px;
+  }
+  
+  .social-media img {
+    width: 50px; /* Reduje el tamaño de los íconos */
+    height: 50px;
     transition: transform 0.3s;
-    padding: 10px;
-}
-
-.social-media img:hover {
-    transform: scale(1.2);
-}
-
+    padding: 5px; /* Reduje el espacio entre el ícono y el borde */
+  }
+  
+  .social-media img:hover {
+    transform: scale(1.1); /* Ajusté el factor de escala */
+  }
+  
+  .map {
+    margin-top: 20px; /* Espacio adicional entre el contenido y el mapa */
+  }
+  
+  .map iframe {
+    width: 30%; /* Hacer que el mapa ocupe todo el ancho del footer */
+    height: 100px; /* Altura fija del mapa */
+  }
 @media (max-width: 600px) {
     .title{
         font-size: 60px;
