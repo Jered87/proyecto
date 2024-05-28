@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Tequilas</title>
+</head>
+
+<body>
+    <header class="header-container">
+
+        <div class="login">
+            <li><a href="../index.html"><button class="btnVolver">Inicio</button></a></li>
+            <li><a href="./registro.html"><button id="button-registro">Registrarse</button></a></li>
+            <li><a href="../carrito.html"><button id="button-cart"><i
+                            class="fa-solid fa-cart-shopping"></i></button></a></li>
+        </div>
+        <div class="header-content">
+            <h1 class="title">PIXEL BAR</h1>
+            <h2>Tragos un px a la vez</h2>
+        </div>
+    </header>
+    <nav class="menu">
+        <ul>
+            <li><a href="./gin.html">Gin</a></li>
+            <li><a href="./vodka.html">Vodka</a></li>
+            <li><a href="./whisky.html">Whisky</a></li>
+            <li><a href="./ron.html">Ron</a></li>
+            <li><a href="./tequila.html">Tequila</a></li>
+            <li><a href="./vermouth.html">Vermouth</a></li>
+
+        </ul>
+    </nav>
+    <!-- ************************cards******************** -->
+    <section class="tarjetas">
+        <!-- ---Acá se cargaran los productos de manera dinámica con js ------ -->
+    </section>
+    <!-- ************************footer************************ -->
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="textoFooter">Seguinos en nuestras redes sociales</h3>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="../img/facebook.ico" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="../img/instagram.ico" alt="Instagram">
+                </a>
+                <a href="https://wa.me/tu-numero" target="_blank" aria-label="WhatsApp">
+                    <img src="../img/Whatsapp.ico" alt="WhatsApp">
+                </a>
+            </div>
+            <p>De donde somos:</p>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13137.19353355071!2d-58.5823825694336!3d-34.596615609192135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1716858844546!5m2!1ses-419!2sar"
+                    width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Pixel Bar. Todos los derechos reservados.</p>
+    </footer>
+    <!-- *******************js********************* -->
+    <script src="../js/productos.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/tequila.js"></script>
+</body>
+
+</html>

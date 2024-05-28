@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header class="header-container">
+        <li><button class="btnVolver"><a class="volver" href="../index.html">Volver</a></button></li>
+        </div>
+        <div class="header-content">
+            <h1 class="title">Registro</h1>
+        </div>
+    </header>
+    <!-- *******************************formulario**************************** -->
+    <div class="contenedor">
+        <form id="formulario" action="" method="">
+            <div class="form-control ">
+                <label for="usuario" class="form-label">Nombre de usuario</label>
+                <input id="usuario" type="text" placeholder="Escribe tu usuario">
+                <p></p>
+            </div>
+            <div class="form-control">
+                <label for="email">E-mail</label>
+                <input id="email" type="email" placeholder="Ej..correo@correo.com">
+                <p></p>
+            </div>
+            <div class="form-control">
+                <label for="pass">Password</label>
+                <input id="pass" type="password" placeholder="Debe tener mínimo 8 caracteres">
+                <p></p>
+            </div>
+            <div class="check">
+                <input type="checkbox" class="cuadrito">
+                <label for="">Desea recibir promociones?</label>
+            </div>
+            <div class="check">
+                <label for="zonas">Selecciona su zona de Argentina:</label>
+                <select id="zonas" name="zonas" class="seleccion">
+                    <option value="seleccione">Seleccione</option>
+                    <option value="buenos_aires">Buenos Aires</option>
+                    <option value="catamarca">Catamarca</option>
+                    <option value="chaco">Chaco</option>
+                    <option value="chubut">Chubut</option>
+                    <option value="caba">Ciudad Autónoma de Bs As</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
+                    <option value="entre_rios">Entre Ríos</option>
+                    <option value="formosa">Formosa</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="la_pampa">La Pampa</option>
+                    <option value="la_rioja">La Rioja</option>
+                    <option value="mendoza">Mendoza</option>
+                    <option value="misiones">Misiones</option>
+                    <option value="neuquen">Neuquén</option>
+                    <option value="rio_negro">Río Negro</option>
+                    <option value="salta">Salta</option>
+                    <option value="san_juan">San Juan</option>
+                    <option value="san_luis">San Luis</option>
+                    <option value="santa_cruz">Santa Cruz</option>
+                    <option value="santa_fe">Santa Fe</option>
+                    <option value="santiago_del_estero">Santiago del Estero</option>
+                    <option value="tierra_del_fuego">Tierra del Fuego</option>
+                    <option value="tucuman">Tucumán</option>
+                </select>
+            </div>
+            <button class="btnEnviar" type="submit">Enviar</button>
+            <div id="modalEmail">
+            </div>
+        </form>
+    </div>
+    <!-- ********************************footer************************* -->
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="textoFooter">Seguinos en nuestras redes sociales</h3>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                    <img src="../img/facebook.ico" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                    <img src="../img/instagram.ico" alt="Instagram">
+                </a>
+                <a href="https://wa.me/tu-numero" target="_blank" aria-label="WhatsApp">
+                    <img src="../img/Whatsapp.ico" alt="WhatsApp">
+                </a>
+            </div>
+            <p>De donde somos:</p>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13137.19353355071!2d-58.5823825694336!3d-34.596615609192135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1716858844546!5m2!1ses-419!2sar"
+                    width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2024 Pixel Bar. Todos los derechos reservados.</p>
+    </footer>
+    <!-- **************************js******************************** -->
+    <script src="../js/registro.js"></script>
+</body>
+
+</html>
