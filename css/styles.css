@@ -65,7 +65,7 @@
     border-radius: 8px;
 }
 
-#button-user:hover, #button-registro:hover, #button-cart:hover, .btnVolver:hover{
+#button-user:hover, #button-registro:hover, #button-cart:hover, .btnVolver:hover, #age-verification-modal button:hover{
     background-color: #2a3430;
     color: white;
     font-weight: bolder;
@@ -111,8 +111,56 @@
     text-decoration: none;
 }
 
+/*----------------------------- check-edad ---------------------------------*/
+#age-verification-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  padding-top: 10%;  
+}
 
-/* container */
+#age-verification-modal .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  height: 100%;
+}
+
+#age-verification-modal h1, p {
+  font-family: "Pixelify Sans", sans-serif;
+  color: rgba(212, 184, 21, 0.877);
+}
+
+#age-verification-modal img {
+  height: 30%;
+  width: auto;
+  text-align: center;
+}
+
+#age-verification-modal button {
+  background-color: rgba(212, 184, 21, 0.877);
+  color: rgb(22, 1, 1);
+  padding: 8px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+
+/*--------------------------------------------- container ----------------------------*/
 .container {
     display: flex;
     flex-wrap: wrap;
