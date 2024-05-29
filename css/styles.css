@@ -522,6 +522,9 @@ li {
     padding: 8px;
   }
 
+  .carouselSlider{
+    max-width: 100%;
+  }
   .products {
     flex-direction: column;
     align-items: center;
