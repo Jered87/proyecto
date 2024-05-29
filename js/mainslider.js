@@ -55,15 +55,6 @@ function getRandomElements(array, count) {
 }
 
 const randomElements = getRandomElements(arrayDeArrays, 10);
-
-
-// const productos = [
-//   { id: 1, titulo: 'Producto 1', descripcion: 'Descripción 1', precio: 100, imagen: './img/absolut.png' },
-//   { id: 2, titulo: 'Producto 2', descripcion: 'Descripción 2', precio: 200, imagen: './img/chivaslitro.png' },
-//   { id: 3, titulo: 'Producto 3', descripcion: 'Descripción 3', precio: 300, imagen: './img/diplomatico.png' },
-//   { id: 4, titulo: 'Producto 4', descripcion: 'Descripción 4', precio: 400, imagen: './img/orodeoaxaca.png' },
-//   { id: 5, titulo: 'Producto 5', descripcion: 'Descripción 5', precio: 500, imagen: './img/principe.png' }
-// ];
 populateSlider(randomElements);
 mostrarSlide(indexActual);
 
