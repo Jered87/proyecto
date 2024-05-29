@@ -198,6 +198,7 @@
 .cardIndex {
   min-width: 100%;
   box-sizing: border-box;
+  align-content: center;
 }
 
 .carousel-button {
